@@ -4,28 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="stylesheet.css">
     <title>In Progress</title>
  
 </head>
 <body>
-
-       <script>
+    <script>
             window.addEventListener('scroll', () => {
                 document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
             }, false);
     </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
 
-    <nav>
-        <span class="swagatName">In Progress... Stay Tuned... </span>
-        <img class="swagatPic" src="SwagatPic.JPG" alt="Swagat's Profile Pic">
-        <ul>
-            <li>Resume</li>
-            <li>About Me</li>
-        </ul>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Navbar text with an inline element
+          </span>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-dark bg-dark sticky-top nav-pills">
+        <!-- <span class="swagatName">Swagat Adhikary</span>
+        <img class="swagatPic" src="SwagatPic.JPG" alt="Swagat's Profile Pic"> -->
+            <span class="navbar-brand" style="margin-left:2%;">
+                <!-- <img class="swagatPic" src="SwagatPic.JPG" alt="Swagat's Profile Pic" width="30" height="30" class="d-inline-block align-top"> -->
+                Swagat Adhikary
+            </span>
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link active" style="background-color:gray;">Resume</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            </ul>
+        
     </nav>
 
-    <div class="container">
+    <div class="content">
         <!-- Progress Bar: -->
         <div class="progress"></div>
         <!-- To leave space for fixed aside:  -->
@@ -155,7 +186,7 @@
                 <div class="proj1">
                     <img src="SwagatPic.JPG" alt="" class="divImg1">
                     <div>
-                        <h5 class="divHead1"></h5>
+                        <h5 class="divHead1">Exercise Machine</h5>
                         <ul class="projDetail">
                             <li>Assembled buttons, wires, LCD display, batteries, etc., to create a device to sort through various timed exercises</li>
                             <li>Soldered a left, home, and right button to change work-out routine, a potentiometer to adjust screen brightness, and a timer

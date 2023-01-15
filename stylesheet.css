@@ -5,7 +5,7 @@
     background-color: black;
     }
 */
-.swagatPic {
+/* .swagatPic {
     width: 150px;
     height: 115px;
     float:left;
@@ -14,20 +14,23 @@
     position: absolute;
     left: -300px;
 
- }
+ } */
+
 
 nav {
     background-color: black; 
     text-align: right;
- 
-    }
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
 
-.swagatName {
+/* .swagatName {
     color: white;
     display: inline-block;
     margin: 30px 950px 30px 0;
     font-size: 24px;
-    }
+    } */
 
 nav ul li {
     color: white;
@@ -36,24 +39,24 @@ nav ul li {
     display: inline-block;
     font-size: larger;
     padding-left: 15px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     }
 
 nav ul {
     margin-right: 5%;
 }
-
-/*nav:hover {
+/* 
+nav:hover {
     transition-delay: 0.5s;
     background-color: silver;
 }
 
 nav:hover li{
     color: black;
-    tras
+    
     }
-*/
-nav:hover .swagatPic{
+
+nav:hover; .swagatPic{
     transform: translate(300px,0);
     transition: all 0.6s linear;
 }
@@ -64,7 +67,7 @@ nav:hover .swagatName{
 
 li:hover {
     background-color: darkgray;
-}
+} */
 
 body {
     background-color: teal;
@@ -152,19 +155,24 @@ section img {
 
 }
 
-section > div div:nth-child(even) {
+section > div div:nth-child(even) { /* The text portion of the div */
     flex: 4;
     margin: 2%;
-    font-size: 2.5vw;
+    font-size: 2.0vw;
     /* border: 2px solid red; */
 }
 /*------------------------- ---------*/
-
-.container{
+div h5 {
+    text-align: center;
+}
+.content{
     display: flex;
+    width: 100%;
+    /* margin-top: 40px; */
 }
 .whitespace {
     flex: 1;
+
 }
 aside{
     display: flex;
@@ -175,10 +183,10 @@ aside{
     text-align: center;
     margin: 1%;
     position: fixed;
-    top: 75px;
+    top: 10%;
     left: 0;
     bottom: 0;
-    
+    width: 9%
 
 }
 
@@ -192,23 +200,58 @@ main{
     flex: 9;
 }
 
+/* --------- Sticky Scroll --------*/
+
+/* Style the navbar */
+/* #navbar {
+    overflow: hidden;
+    background-color: #333;
+  } */
+  
+  /* Navbar links */
+  /* #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  } */
+   
+  /* Page content */
+  /* .content {
+    padding: 16px;
+  } */
+
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  /* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  /* .sticky + .content {
+    padding-top: 60px;
+  } */
+/* -----------------------------*/
+
 .progress {
-    display: flex;
+    /* display: flex; */
     height: 0;
     width: 9%;
     background-color: teal;
     margin: 1%;
     position: fixed;
-    top: 75px;
+    top: 10%;
     left: 0;
-    bottom: 0;
     animation: progress 1s linear;
   }
 @keyframes progress {
     to {
         background-color: rgb(255, 0, 0);
-        /* Height is 100% of the window - 1% top margin - 1% bottom margin - 75px offset from top. */
-        height: calc(100% - 2% - 75px);
+        /* Height is 100% of the window - 1% top margin - 1% bottom margin - 10% offset from top. */
+        height: calc(100% - 2% - 10%);
     }
 }
 
@@ -221,4 +264,33 @@ main{
     animation-iteration-count: 1;
     animation-fill-mode: both;
   }
+/* To fix issue with progress bar overfill: */
+  @media only screen and (min-width: 750px) {
+    @keyframes progress {
+        to {
+            background-color: rgb(255, 0, 0);
+            /* (Height is 100% of the window - 2% margins - 10% offset from top.) - 1% for error */
+            height: calc(100% - 2.5% - 10%);
+        }
+    }
+  }
 
+  @media only screen and (min-width: 900px) {
+    @keyframes progress {
+        to {
+            background-color: rgb(255, 0, 0);
+            /* (Height is 100% of the window - 2% margins - 10% offset from top.) - 1% for error */
+            height: calc(100% - 3% - 10%);
+        }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    @keyframes progress {
+        to {
+            background-color: rgb(255, 0, 0);
+            /* (Height is 100% of the window - 2% margins - 10% offset from top.) - 1% for error */
+            height: calc(100% - 4% - 10%);
+        }
+    }
+  }
