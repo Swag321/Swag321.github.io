@@ -45,6 +45,11 @@ nav ul li {
 nav ul {
     margin-right: 5%;
 }
+
+main li:hover {
+    background-color: lightcyan;
+}
+
 /* 
 nav:hover {
     transition-delay: 0.5s;
@@ -190,10 +195,14 @@ aside{
 
 }
 
-aside a {
-    display: block;
+aside span {
     text-decoration: none;
     color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+
 }
 
 main{
