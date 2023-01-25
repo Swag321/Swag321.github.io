@@ -138,7 +138,6 @@ section h3 {
     background-color: darksalmon;
 }
 
-
 /*----------------------Organization ----*/
 section > div {
     display: flex;
@@ -199,8 +198,7 @@ aside span {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    border: 1px solid black;
-    flex-grow: 1;
+    border-bottom: 1px solid black;
     text-align: center;
 
 }

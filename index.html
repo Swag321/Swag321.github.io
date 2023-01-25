@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-
+    
     <link rel="stylesheet" href="stylesheet.css">
     <title>In Progress</title>
  
@@ -45,13 +43,13 @@
             <span onclick="to('agTech')">AgTech</span>
             <span onclick="to('toyCar')">Toy Car</span>
             <span onclick="to('exMachine')"> Exercise Machine</span>
-            <span id="demo"></span>
+            <!-- <span id="demo"></span> -->
         </aside>
         <main>
             <section class="education">
                 <h3 class="secHead">Education</h3>
                 <span class="line"></span>
-                <div id="unc" class="unc div1">
+                <div id="unc" class="unc div1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Expected Grad ~2025">
                     <img class="divImg1" src="unc2.png" alt="UNC Chapel Hill">
                     <div><h5 class="divHead1"> University of North Carolina at Chapel Hill</h5>
                     <ul class="divDetail1">
@@ -61,7 +59,7 @@
                         <li>Credit for Intro to Comp, Discrete Structures, Calc III</li>
                     </ul></div>
                 </div>
-                <div id="wakeTech" class="div2 wakeTech">
+                <div id="wakeTech" class="div2 wakeTech" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="July 2022">
                     <img src="wakeTech1.jpeg" alt="Wake Tech" class="divImg2">
                     <div><h5 class="divHead2"> Wake Technical Community College</h5>
                     <ul class="divDetail">
@@ -69,7 +67,7 @@
                         <li>Dual Enrolled in High School for College Transfer</li>
                     </ul></div>
                 </div>
-                <div id="caryHigh" class="div1 caryHigh">
+                <div id="caryHigh" class="div1 caryHigh" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="June 2022">
                     <img src="caryHigh3.jpeg" alt="Cary High" class="divImg1">
                     <div><h5 id="cary"> Cary High School</h5>
                     <ul class="divDetail">
@@ -82,7 +80,7 @@
             <section class="experience">
                 <h3>Experience</h3>
                 <span class="line"></span>
-                <div id="soe" class="exp1">
+                <div id="soe" class="exp1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="August 2022 - Present | Student Technology Assistant">
                     <img class="divImg1" src="uncSoe1.png" alt="School of Education">
                     <div>
                         <h5 class="expHead1 divHead1">School of Education IT Department</h5>
@@ -94,7 +92,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="enkWeb" class="exp2">
+                <div id="enkWeb" class="exp2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="October 2022 - November 2022 | Website Development Intern">
                     <img src="enkWeb.png" alt="Everest Nepali Kitchen Website" class="divImg2">
                     <div>
                         <h5 class="divHead2"> Everest Nepali Kitchen</h5>
@@ -106,7 +104,7 @@
                     </div>
                 </div>
         
-                <div id="zebra" class="exp1">
+                <div id="zebra" class="exp1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="March 2022 - August 2022 | Programming and Robotics Instructor">
                     <img src="zebraRobotics.png" alt="Zebra Robotics" class="divImg1">
                     <div>
                         <h5 class="divHead1">Zebra Robotics</h5>
@@ -118,7 +116,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="enkWaiter" class="exp2">
+                <div id="enkWaiter" class="exp2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Waiter">
                     <img src="enkWaiter1.webp" alt="Everest Nepali Kitchen Waiter" class="divImg2">
                     <div>
                         <h5 class="divHead2">Everest Nepali Kitchen</h5>
@@ -128,7 +126,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="foodLion" class="exp1">
+                <div id="foodLion" class="exp1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cashier">
                     <img src="foodLion.webp" alt="Food Lion Cashier" class="divImg1">
                     <div>
                         <h5 class="divHead1">Food Lion</h5>
@@ -143,7 +141,7 @@
                 <h3>Projects</h3>
                 <span class="line"></span>
         
-                <div id="agTech" class="proj1">
+                <div id="agTech" class="proj1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="November 2022">
                     <img src="agTech.jpeg" alt="AgTech" class="divImg1">
                     <div>
                         <h5 class="divHead1">AgTech</h5>
@@ -151,14 +149,14 @@
                             <li>Invented a contraption to measure humidity, temperature, heat index, and water level in soil</li>
                             <li>Uploaded soil content data to Firebase to be extracted as JSON and visualized on Colab</li>
                             <li>Embedded the Colab gist on our website which we hosted with REACT</li>
-                            <li>Awarded $400 in Best Agricultural Innovation Award (John Deere) and Interview by Infosys for Best Junior Hackers</li>
+                            <li><em><strong>Awarded $400 in Best Agricultural Innovation Award (John Deere) and Interview by Infosys for Best Junior Hackers</strong></em></li>
                             <li>Devpost: <a target="_blank" href="https://devpost.com/software/agtech">devpost.com/software/agtech</a></li>
                             <li>Website: <a target="_blank" href="https://hacknc22.web.app/">hacknc22.web.app/</a></li>
                             <li>Code: <a target="_blank" href="https://github.com/Swag321/hack-nc.git">github.com/Swag321/hack-nc.git</a></li>
                         </ul>
                     </div>
                 </div>
-                <div id="toyCar" class="proj2">
+                <div id="toyCar" class="proj2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="June 2020">
                     <img src="toyCar.jpeg" alt="Clap-Controlled Car" class="divImg2">
                     <div>
                         <h5 class="divHead2">Clap-Controlled Car</h5>
@@ -169,7 +167,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="exMachine" class="proj1">
+                <div id="exMachine" class="proj1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="July 2020">
                     <img src="exerciseMachine.jpg" alt="" class="divImg1">
                     <div>
                         <h5 class="divHead1">Exercise Machine</h5>
@@ -185,6 +183,7 @@
         
         </main>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
